@@ -19,8 +19,7 @@
 .env.test.local
 .env.production.local
 workspace.code-workspace
-#the .env file is where our API key will be stored, and should not be public on github
-.env 
+
 
 
 npm-debug.log*
