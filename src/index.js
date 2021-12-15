@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppContext from './context/AppContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/*Makes the App a child of the AppContext. */}
+    <AppContext> 
+      <App />
+    </AppContext>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

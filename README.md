@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Fonts:
+GOOGLE FONTS:
+Headings
+Love Ya Like A Sister:
+https://fonts.google.com/specimen/Love+Ya+Like+A+Sister?query=Love+Ya+Like+a+sister
+
+Body Text
+Sanchez:
+https://fonts.google.com/specimen/Sanchez?query=Sanchez
+
 ## Available Scripts
 
 In the project directory, you can run:

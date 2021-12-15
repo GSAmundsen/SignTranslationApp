@@ -12,11 +12,16 @@
 /build
 
 # misc
+.notes.txt
 .DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+workspace.code-workspace
+#the .env file is where our API key will be stored, and should not be public on github
+.env 
+
 
 npm-debug.log*
 yarn-debug.log*

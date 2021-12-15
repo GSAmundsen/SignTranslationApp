@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
+:root{
+    --customOrange: rgb(253, 187, 64);
+    --textColor: white;
+    --headerFont: "Love Ya Like A Sister";
+    --bodyFont: "Sanchez";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#button-element{
+    font-family: var(--bodyFont);
+    color: var(--textColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav-bar{
+    display: flex;
+    background-color: var(--customOrange);
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 5px solid sandybrown;   
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#nav-bar ul{
+    text-align: center;
+    width: 100%;
+    font-family: var(--headerFont);
+    font-size:x-large;
+    color: white;
+    padding-top: 1%;
+    margin: 0 5% 0 5%;
 }
 
-.App-link {
-  color: #61dafb;
+#nav-bar-title{
+    display: flex;
+    list-style-type: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav-bar li h4{
+    display: flex;
+    width: 20em;
+    text-align: left;
+}
+
+#nav-bar-logged-in-links{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-content: center;
+        
+}
+
+#nav-bar-logged-in-links *{
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+#login-form{
+    display: flex;
+    background-color: var(--customOrange);
+    font-family: var(--bodyFont);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+#login-page-logo {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--headerFont);
+    color: var(--textColor);
+
+}
+#login-form-field{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    border-radius: 10px;
+    border-bottom: 10px solid rgb(173, 72, 173);
+    background-color: white;    
+    text-align: center;
+}
+#login-form-field input{
+    font-size: xx-large;
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgb(226, 226, 226);
+    border: solid 2px white;
+    padding: 10px;
+}
+#login-form-field button{
+    background-color: rgb(95, 173, 86);
+    border-radius: 20px;
+    font-size: x-large;
+    border-color: white;
+    padding: 5px;
+  
+}
+
+/*Maybe consolidate this with login Form?*/
+#translate-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--customOrange);
+    font-family: var(--bodyFont);
+    font-size: large;
+    align-items: center;
+    padding-top: 2%;
+}
+#translate-form-field{
+    display: flex;
+    border-style: none;
+    margin: 3%;
+}
+#translate-form-field input{
+    display: flex;
+    width:40em;
+    font-size: large;
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgb(241, 241, 241);
+    border: solid 2px white;
+    padding: 10px;
+}
+
+#translate-form-field button{
+    display: flex;
+    background-color: rgb(95, 173, 86);
+    border-radius: 20px;
+    font-size: x-large;
+    border-color: transparent;
+    padding: 15px 15px;
+}
+
+
+#translated-text{
+    min-height: 100px;
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 10px;
+    border-bottom: 30px solid rgb(173, 72, 173);
+    margin: 2% auto 0 auto;
+
+}
+#translated-text img{
+    width: 90px;
+    margin: 2px;
+}
+
+
+#profile-page{
+    display: flex;
+    background-color: var(--customOrange);
+    font-family: var(--bodyFont);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+#profile-page-actions{
+    display: flex;
+    flex-direction: column;
+    
+}
+#profile-page-actions button{
+    display: flex;
+    border-radius: 10px;
+    padding: 15px 35px;
+    background-color: red;
+    margin-top: 10%;
+}
+
+
+#profile-page-translation-history{
+    margin: 3%;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 0 5% 1%;
+    text-align: center;
+    
+}
+
+#profile-page li{
+    list-style: none;
 }
